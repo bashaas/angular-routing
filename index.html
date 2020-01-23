@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routerProgram">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading-part">
+            <ul>
+                <li> <a ui-sref="home" ui-sref-active="active">Home</a></li>
+                <li> <a ui-sref="contact" ui-sref-active="active">Contact</a></li>
+                <li> <a ui-sref="email" ui-sref-active="active">Email</a></li>
+                <li> <a ui-sref="address" ui-sref-active="active">Address</a></li>
+            </ul>
+        </div>
+        <div class="section-part">
+            <ui-view></ui-view>
+        </div>
+    </div>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/controller/homeCtrl.js"></script>
+    <script src="js/controller/contactCtrl.js"></script>
+    <script src="js/controller/email.js"></script>
+    <script src="js/controller/addressCtrl.js"></script>
+</body>
+
+</html>
